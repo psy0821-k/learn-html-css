@@ -9,5 +9,19 @@
     <a href="/index.html">Index로 이동</a>
     <hr />
     <h1>video 요소</h1>
+    <video src="/src/assets/video/stories.mp4" controls poster="/src/assets/video/poster.jpg">
+      <track src="/src/assets/video/stories-en.vtt" kind="captions" srclang="en" label="영어" />
+      <track src="/src/assets/video/stories-en.vtt" kind="captions" srclang="ko" label="한국어" />
+    </video>
+    <hr />
+    <!-- 웹접근성 때문에 muted를 추가해야지만 자동재생이 가능하다 sr소리와 섞이면 듣기에 혼란이 올 수 있기 때문에  -->
+    <video controls autoplay muted poster="/src/assets/video/poster.jpg">
+      <source src="/src/assets/video/google-developer-stories.webm" type="video/webm" />
+      <source src="/src/assets/video/google-developer-stories.ogg" type="video/ogg" />
+      <source src="/src/assets/video/google-developer-stories.mov" type="video/mov" />
+      <source src="/src/assets/video/google-developer-stories.mp4" type="video/mp4" />
+      <!-- 자막/ kind는 자막이라고 알려주는 속성, srclang은 자막의 언어, label은 영어자막이라고 알려주는것 -->
+      <track src="/src/assets/video/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
+    </video>
   </body>
 </html>
