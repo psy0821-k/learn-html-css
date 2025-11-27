@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 요소 | Likelion Bootcamp</title>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>폼 요소</h1>
+
+    <!-- 
+    카멜케이스 : userName
+    케밥케이스 : user-name
+    파스칼/ 타이틀케이스 : UserName
+    snake case : user_name 
+    -->
+    <form action="#">
+      <fieldset>
+        <legend>필수 입력 서식</legend>
+        <div>
+          <label for="userName" aria-hidden="true">이름</label>
+          <input type="text" placeholder="이름을 입력해주세요" id="userName" />
+        </div>
+        <div>
+          <label for="password" aria-hidden="true">비밀번호</label>
+          <input type="password" placeholder="비밀번호를 입력해주세요" id="password" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
