@@ -16,18 +16,84 @@
     파스칼/ 타이틀케이스 : UserName
     snake case : user_name 
     -->
+    <!-- form태그는 input값을 묶어주는 동시에 데이터를 전송할 때 사용됩니다 -->
     <form action="#">
+      <!-- label, input값이 들어가 있는 박스 -->
       <fieldset>
+        <!-- legend는 fiedset 설명 캡션같은 존재 -->
         <legend>필수 입력 서식</legend>
+        <!-- label의 for 과 input의 id를 동일하게 해서 서로 연결가능 -->
+        <!-- 텍스트 선택해도 input에 커서 깜빡임 -->
+        <!-- placeholder 인풋 내부에 글씨 작성 인풋 클릭시 또는 입력 시 안보임 -->
+        <!-- type에 따라 용도 바뀜 잘 선택하셔야 함 -->
         <div>
+          <!-- label은 input과 단짝 한 세트 -->
           <label for="userName" aria-hidden="true">이름</label>
           <input type="text" placeholder="이름을 입력해주세요" id="userName" />
         </div>
         <div>
+          <!-- 암묵적으로 label안에 input태그를 넣고 for을 지울 수 있지만 -->
+          <!-- 지금처럼 하는게 더 명시적임 -->
           <label for="password" aria-hidden="true">비밀번호</label>
           <input type="password" placeholder="비밀번호를 입력해주세요" id="password" />
         </div>
       </fieldset>
     </form>
+    <hr />
+    <!-- 텍스트 입력 서식 상자 -->
+    <!-- placeholder 입력칸에 어떤 것을 적어야하는지에 대한 힌트 -->
+    <!-- label은 이름표로 placeholder와는 다른것 -->
+    <!-- action ="전송 할 url"  method ="전송방식"-->
+    <form id="inputForm" action="#" method="post">
+      <div>
+        <label for="userId"></label>
+        <input value="박성윤" name="name" type="text" id="userId" placeholder="이름" />
+      </div>
+
+      <!-- 비밀번호 입력 서식 -->
+      <!-- name은 값을 담아갈 그릇 필드에 저장 -->
+      <!-- label input 인라인 요소 -->
+      <div>
+        <label for="userPwd"></label>
+        <input type="password" id="userPwd" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$" placeholder="최소 8자리 이상" name="password" />
+      </div>
+
+      <div>
+        <label for="userEmail"></label>
+        <input type="email" id="userEmail" placeholder="example@likelion.net" required name="email" />
+      </div>
+
+      <div>
+        <label for="search">검색</label>
+        <input type="search" id="search" />
+      </div>
+      <div><label for="userTel">Tel</label><input type="tel" id="userTel" placeholder="010-1234-1234" name="phone" /></div>
+
+      <div><label for="userSns">SNS</label><input type="url" id="userSns" placeholder="https://www.facebook.com" name="sns" /></div>
+      <div></div>
+      <div><input type="radio" id="mail" name="gender" value="man" checked /><label for="mail">남자</label><input type="radio" id="femail" name="gender" value="woman" /><label for="femail">여자</label></div>
+      <div>
+        <input type="checkbox" id="html" value="html" name="frontend" checked /><label for="html">html</label> <input type="checkbox" id="css" value="css" name="frontend" />css<label for="css"></label> <input type="checkbox" id="javaScript" value="js" name="frontend" /><label for="javaScript"
+          >javascript</label
+        >
+      </div>
+      <!-- 색상 -->
+      <div>
+        <input type="color" />
+      </div>
+      <div>
+        <input type="date" />
+      </div>
+      <!-- 첨부서식 -->
+      <div>
+        <label for="file">파일선택</label>
+        <input type="file" id="file" />
+      </div>
+      <!-- 전송 버튼 -->
+      <input type="submit" value="전송" />
+      <input type="button" value="Click" />
+      <!-- <button type="submit">제출</button> -->
+    </form>
+    <input type="reset" value="초기화" form="inputForm" />
   </body>
 </html>

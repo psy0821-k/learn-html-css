@@ -27,20 +27,27 @@
     <h2>입문자를 위한 Git과 HTML &amp; CSS 과정</h2>
 
     <table>
+      <!-- 설명 -->
       <caption>
         학습시간, 난이도, 교육비 지원, 평가항목, 수료기준, 정원, 교재 정보 등을 나타낸 표
       </caption>
+      <!-- 열 단위로 css한번에 설정 가능 -->
       <colgroup>
         <col span="2" />
         <col span="2" />
       </colgroup>
       <tbody>
+        <!-- 행 -->
         <tr>
+          <!-- 열 scope는 진행방향-->
+          <!-- key같은 애 -->
           <th scope="row">학습시간</th>
+          <!-- value -->
           <td>09:00 ~ 17:00 (28시간)</td>
 
-          <th scope="row">난이도</th>
-          <td>초급</td>
+          <!-- 겹칠땐 headers랑 id로 연결 -->
+          <th scope="row" id="level">난이도</th>
+          <td headers="level">초급</td>
         </tr>
         <tr>
           <th scope="row">교육비 지원</th>
@@ -60,6 +67,7 @@
       <tfoot>
         <tr>
           <th scope="row">교재정보</th>
+          <!-- 병합 -->
           <td colspan="3">
             입문자를 위한 Git과 HTML&CSS<br />
             HTML & CSS 웹사이트 개발과 디자인 기초 (35,000원)

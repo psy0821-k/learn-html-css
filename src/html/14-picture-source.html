@@ -8,7 +8,16 @@
   <body>
     <a href="/index.html">Index로 이동</a>
     <hr />
+
+    <!-- picture,source에서는 최초 로드 시 해상도에 따라 이미지를 로드 (최초 로드의 경우에 적용됨)
+    CSS를 쓰더라도 이미지를 뷰포트 별로 렌더링 할 수는 없기 때문에 (뷰포트별로 렌더링하려면 자바스크립트 써야함)
+    picture, source를 사용하는 것이 리소스를 아끼고 기기에 맞는 이미지를 전달하는 데에 효율적일 것 같습니다!
+    CSS를 쓰는 경우는 이미지의 크기나 기타 요소들을 변경하거나 꾸밀 수는 있지만 뷰포트에 따라 이미지 자체를 갈아끼울 수 없어서 좀 다른거 같아요 -->
+
+    <!-- mediaquery는 이미지를 갈아끼울 수 없지만  picture과 소스를 이용하면 가능 그리고 효율적임 -->
     <h1>picture 요소와 source요소</h1>
+    <!-- 이미지는 윈도우 화면의 크기에 따라 사이즈 여러개 준비  -->
+    <!-- 효율성 때문 -->
 
     <picture>
       <source sizes="50vw" srcset="/src/assets/logo/netflix@1x.webp 420w, /src/assets/logo/netflix@2x.webp 656w" />
@@ -22,6 +31,8 @@
     </picture>
     <hr />
     <!-- 반응형 디자인 -->
+    <!-- media는 화면 모니터의 너비에따라 이미지가 변합니다 -->
+    <!-- src로 경로잡고 srcset으로 바꾸는거 있지마십쇼 -->
     <picture>
       <source srcset="/src/assets/rwd/small-550.jpg" media="(max-width: 500px)" />
       <source srcset="/src/assets/rwd/medium-1024.jpg 1024w" media="(max-width: 768px)" />
