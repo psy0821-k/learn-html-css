@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 셀렉트 텍스트에어리어 | Likelion Bootcamp</title>
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">Index로 이동</a>
+    <hr />
+    <h1>폼 셀렉트 텍스트에어리어</h1>
+    <div>
+      <label for="petSelect">반려동물</label>
+      <!-- 잘못된 마크업 option value="반려동물을 선택하세요" -->
+      <select name="petSelect" id="petSelect">
+        <option value="" aria-hidden="">반려동물을 선택하세요</option>
+        <option value="dog">강아지</option>
+        <option value="cat">고양이</option>
+        <option value="bird">새</option>
+        <option value="turtle">거북이</option>
+      </select>
+    </div>
+
+    <hr />
+
+    <div>
+      <label for="petSelect2">반려동물</label>
+      <!-- 잘못된 마크업 option value="반려동물을 선택하세요" -->
+      <!-- multiple 다중선택 -->
+      <select size="10" multiple name="petSelect2" id="petSelect2">
+        <option value="" aria-hidden="">반려동물을 선택하세요</option>
+        <option value="dog">강아지</option>
+        <option value="cat">고양이</option>
+        <option value="bird">새</option>
+        <option value="turtle">거북이</option>
+      </select>
+    </div>
+
+    <hr />
+    <!-- 여러줄 글 상자 -->
+    <label for="memo" class="sr-only">메모</label>
+    <textarea name="" id="memo" cols="30" rows="20">내용을 입력해 주세요</textarea>
+  </body>
+</html>
