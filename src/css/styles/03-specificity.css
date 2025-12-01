@@ -1,9 +1,39 @@
 /* 상속 */
 /* 내 스타일이 없으면 상속받아 사용 */
+/* 레벨이 높을 수록 먼저 선택 됨 */
+.wrapper {
+  color: red;
+}
+/* Lv 1 */
 p {
   color: blue;
 }
+p {
+  color: purple;
+}
 
-.wrapper {
+/* Lv 12 = 1+1+10 */
+body p.note {
   color: red;
+}
+
+/* Lv 11 */
+p.note {
+  color: blue;
+}
+
+/* Lv 10  */
+.note {
+  color: red;
+}
+
+.like,
+.frontend {
+  color: purple;
+}
+
+/* Lv 100 얘는 잘 안씀 why? 틀린건 아님 
+class 1000개를 써도 id를 못이김*/
+#coding {
+  color: blue;
 }
