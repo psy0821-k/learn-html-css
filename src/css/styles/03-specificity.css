@@ -1,0 +1,9 @@
+/* 상속 */
+/* 내 스타일이 없으면 상속받아 사용 */
+p {
+  color: blue;
+}
+
+.wrapper {
+  color: red;
+}
