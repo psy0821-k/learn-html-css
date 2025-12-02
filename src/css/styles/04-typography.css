@@ -1,0 +1,58 @@
+/* 글꼴 */
+h1 {
+  font-family: 'SUIT Variable', sans-serif;
+}
+
+.like {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* 굵기 */
+h1 {
+  font-weight: 100;
+}
+.frontend {
+  font-size: 20px;
+}
+/* em 부모단위
+  rem 루트단위로 폰트사이즈 변함
+*/
+.lion {
+  background-color: #ffc;
+  /* font-size: 1.5em; */
+  /* clamp()함수 : 최소 늘어나는 크기 최대크기 */
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+.bootcamp {
+  font-size: 2rem;
+}
+
+.lion {
+  /* number단위로 줄 높이를 조절하는것이 좋다 */
+  line-height: 1.6;
+}
+
+em {
+  font-style: italic;
+}
+
+/* 크기 작은 대문자 */
+.lion {
+  font-variant: small-caps;
+}
+
+/* font 단축 속성 */
+.school {
+  background-color: #fcf;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  font: bold italic small-caps 20px/1.5 Georgia;
+}
+/* 그림자 */
+h1 {
+  text-shadow: 2px -2px 2px red;
+}
