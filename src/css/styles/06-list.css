@@ -1,0 +1,21 @@
+.frontend ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.frontend ol {
+  background-color: #ffc;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  padding-left: 0;
+}
+/* list style image 속성 */
+.bootcamp ul {
+  list-style-image: url(/src/assets/thumbnail/new.png);
+}
+
+.bootcamp ol {
+  background-color: #cff;
+  list-style: square inside url(/src/assets/thumbnail/new.png);
+  padding-left: 0;
+}
