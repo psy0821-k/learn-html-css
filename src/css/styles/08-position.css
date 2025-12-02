@@ -1,49 +1,47 @@
-/* left나 right중 하나만 사용하기 */
-/* relative 나 자신 위치 기준으로 이동 */
+/* Position 레이아웃 */
+/* position: relative */
+/* 나 자신 기준 이동 */
 .wrapper {
   position: relative;
-  border: 1px solid rgb(17, 94, 209);
+  border: 1px solid blue;
 }
 
 .frontend {
-  position: relative;
   background-color: #000;
-  top: -100px;
-  left: 50px;
-  right: 50px;
-}
-
-span {
   position: relative;
-  background-color: #ffc;
-  top: -5px;
-  left: -5px;
-  display: block;
-  padding: 10px;
-}
+  top: -100px;
 
-/* absolute 절대위치 */
-/* absolute주면 인라인 블록요소 상관없이 무조건 블록으로 됨 */
-/* 인라인 요소는 인의적으로 w,h줄 수 없음 */
+  span {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    background-color: #ffc;
+    display: block;
+    padding: 10px;
+  }
+}
+/* position: absolute  */
+/* 블록요소로 바뀜 */
 .school {
   span {
     background-color: #cff;
+    position: absolute;
+    top: 0;
+    right: 0;
     /* width: 200px;
     height: 100px; */
-    position: absolute;
-    top: 0px;
-    right: 0px;
   }
 }
 
+/* position: fixed */
 .likelion {
   background-color: #ffc;
   width: 100px;
   height: 50px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
   font-weight: 700;
   text-align: center;
   align-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
