@@ -1,0 +1,66 @@
+.frontend span {
+  background-color: #ffc;
+  display: block;
+}
+
+.frontend p {
+  background-color: #fcf;
+  display: inline;
+}
+
+.frontend {
+  /* border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+
+  border-top-color: red;
+  border-bottom-color: red;
+  border-left-color: red;
+  border-right-color: red; */
+
+  border: 3px solid red;
+}
+
+.frontend {
+  /* padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px; */
+
+  padding: 10px 20px 30px 40px;
+}
+
+/* 마진 병합현상 flex일때는 이 현상이 안나타남  */
+.frontend {
+  /* margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 40px; */
+
+  margin: 10px;
+}
+
+.bootcamp span:first-child {
+  width: 100px;
+  /* 가로세로 비율로 맞춰줌 */
+  aspect-ratio: 1/1;
+}
+
+.bootcamp span:last-child {
+  width: 5em;
+  height: 5em;
+}
+
+.school {
+  background-color: #cff;
+  width: 200px;
+  height: 150px;
+
+  overflow: auto;
+}
