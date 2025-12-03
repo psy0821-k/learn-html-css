@@ -1,0 +1,27 @@
+/* float left */
+/* float으로 인한 레이아웃 문제 발생 */
+/* overflow hidden */
+/* claer은 옛날 방식 */
+/* display속성을 flow-root로 부모요소한테 준다 */
+.wrapper {
+  display: flow-root;
+  border: 5px solid red;
+
+  img {
+    border: 2px solid blue;
+    float: left;
+  }
+
+  .like {
+    border: 2px solid green;
+  }
+}
+
+.container {
+  border: 5px solid purple;
+  display: flow-root;
+  img {
+    float: right;
+    border: 2px solid red;
+  }
+}
