@@ -1,0 +1,32 @@
+/* 전역변수 : 모든곳에서 사용가능
+로컬변수: 그 요소 내부에서만 사용가능 */
+/* fallback : 1순위가 안되면 대안값인 2순위 보여주는 것 */
+/* 대소문자 구분 */
+
+/* 애니메이션 동작할 떄 유용함 */
+@property --primay-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(29, 101, 255);
+}
+
+/* 전역변수 */
+:root {
+  --main-color: gray;
+  --default-color: brown;
+}
+
+.wrapper {
+  --default-color: yellow;
+  margin-block: 20px;
+  color: var(--main-color);
+  background-color: var(--default-color);
+}
+
+.like {
+  background: var(--base-color, var(--default-color, red));
+}
+
+.eudm {
+  color: var(--primay-color);
+}

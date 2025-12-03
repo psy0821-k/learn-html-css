@@ -42,15 +42,15 @@ em {
 
 /* font 단축 속성 */
 .school {
-  background-color: #fcf;
+  /* background-color: #fcf;
   font-weight: bold;
   font-style: italic;
   font-variant: small-caps;
   font-size: 20px;
   line-height: 1.5;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif; */
 
-  font: bold italic small-caps 20px/1.5 Georgia;
+  font: bold small-caps italic 20px/1.5 Georgia;
 }
 /* 그림자 */
 h1 {
