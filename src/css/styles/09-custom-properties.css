@@ -1,11 +1,14 @@
 /* 전역변수 : 모든곳에서 사용가능
 로컬변수: 그 요소 내부에서만 사용가능 */
+/* 지역변수 우선 적용됨 */
+
 /* fallback : 1순위가 안되면 대안값인 2순위 보여주는 것 */
 /* 대소문자 구분 */
 
-/* 애니메이션 동작할 떄 유용함 */
+/* 애니메이션 동작할 떄 유용함gi */
 @property --primay-color {
   syntax: '<color>';
+  /* 상속을 받을지 안받을지를 의미*/
   inherits: false;
   initial-value: rgb(29, 101, 255);
 }
@@ -17,9 +20,10 @@
 }
 
 .wrapper {
+  --primay-color: red;
   --default-color: yellow;
   margin-block: 20px;
-  color: var(--main-color);
+  color: var(--primay-color);
   background-color: var(--default-color);
 }
 
