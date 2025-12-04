@@ -1,0 +1,32 @@
+/* mobile first 지키기~ */
+/* 모든 디바이스 */
+
+body {
+  background-color: #ffc;
+}
+
+/* 이하 */
+/* @media (max-width: 400px) {
+  body {
+    background-color: #fcf;
+  }
+} */
+/* 이상 */
+@media (min-width: 400px) {
+  body {
+    background-color: #fcc;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #cfc;
+  }
+}
+
+/* 최신 */
+@media (640px <= width <= 1024px) {
+  body {
+    background-color: red;
+  }
+}
