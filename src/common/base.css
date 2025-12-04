@@ -13,3 +13,18 @@
     margin-block: 20px;
   }
 }
+.ui-component {
+  border: 1px solid black;
+  padding: 10px;
+  margin-block: 10px;
+}
+
+/* copy component */
+.copy-component {
+  display: flex;
+  background: black;
+  color: white;
+  margin-block-start: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
