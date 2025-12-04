@@ -1,18 +1,23 @@
-/* 컴포넌트 디자인 */
-/* 클래스로 줘서 css값 주기~ */
+/* 컴포넌트 */
 .term {
-  background-color: #ffc;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  display: flow-root;
 
   strong {
-    display: block;
     color: #296897;
     font-weight: 700;
+    margin-block-start: -3px;
+    margin-block-end: 4px;
   }
 
+  strong,
   p {
-    font-size: 0.875rem;
-    line-height: 1.5;
+    inline-size: calc(100% - 76px);
+    float: inline-end;
+  }
+
+  img {
+    float: inline-start;
   }
 }
-
-/* 레이아웃 */
