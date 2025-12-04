@@ -1,5 +1,10 @@
 /* 기본 스타일 */
 /* css 본문 스타일 */
+
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
+
 .css {
   margin: 20px;
 
