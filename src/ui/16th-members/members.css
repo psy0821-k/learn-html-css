@@ -1,0 +1,52 @@
+.members-wrapper {
+  block-size: 330px;
+  overflow: auto;
+  font-family: 'SUIT Variable', sans-serif;
+
+  .members {
+    inline-size: 100%;
+    font-size: 1rem;
+    /* base.css에 추가함 */
+    /* border-spacing: 0;
+    border-collapse: collapse; */
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+
+    thead,
+    tfoot {
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    thead,
+    tfoot {
+      position: sticky;
+      width: 100%;
+      inset: 0;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 0.375em;
+      white-space: nowrap;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: var(--gray);
+    }
+  }
+
+  .number {
+    inline-size: 15%;
+  }
+  .name {
+    inline-size: 25%;
+  }
+  .email {
+    inline-size: 30%;
+  }
+  .phone {
+    inline-size: 30%;
+  }
+}
