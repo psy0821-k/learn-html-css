@@ -14,16 +14,12 @@ div {
   }
 }
 .like {
-  padding: 0.5em;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 
-  /* .like-item3 {
-    order: -1;
-  } */
-
-  div:nth-child(even) {
-    order: 1;
+  div {
+    /* order: 1; */
+    flex-shrink: 2;
   }
 }
 
@@ -31,9 +27,15 @@ div {
   display: flex;
   /* flex-direction: row-reverse;
   flex-wrap: wrap; */
-  flex-flow: row-reverse wrap;
+
+  /* space-between: 끝쪽 공간없이 균등하게 */
+  /* space-around: 아이템 기준 같은 너비 예 10 아이템 10+10 아이템 10+10 아이템 10 */
+  /* space-evenly: 모든 공백이 같은 너비 예  10 아이템 10 아이템 10 아이템 10 */
+  flex-flow: column wrap;
+  justify-content: space-evenly;
   padding: 0.5em;
   inline-size: 600px;
+  block-size: 300px;
   > div {
     inline-size: 150px;
   }
@@ -45,5 +47,75 @@ div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  /* stretch 기본속성 컨테이너의 높이만큼 늘려줌 */
   align-items: stretch;
+}
+
+.frontend {
+  display: flex;
+  inline-size: 400px;
+  block-size: 200px;
+  flex-flow: row wrap;
+  /* nowrap일 땐 item을 사용 */
+  align-items: stretch;
+  /* wrap일 땐 컨텐트를 사용 */
+  align-content: center;
+  > div {
+    inline-size: 200px;
+  }
+}
+
+/* gap속성 */
+.bootcamp {
+  inline-size: 400px;
+  display: flex;
+  flex-flow: wrap row;
+  /* padding: 1em; */
+  /* 디자인 시에 갭 주의하기 */
+  column-gap: 40px;
+  block-size: 200px;
+
+  > div {
+    inline-size: 180px;
+  }
+
+  .bootcamp-item1 {
+    /* align-items는 전체 self는 자기자신한테만 적용하는것 */
+    align-self: end;
+  }
+}
+
+/* 
+flex: 축소
+flex-grow: 공간이 남으면 주어진 비율로 너비를 추가해 줌 , 
+flex-shrink: 공간이 모자리면 공간을 축소해주는 것  
+flex-basis : 아이템 크기 설정 */
+.school {
+  display: flex;
+  flex-flow: nowrap row;
+  inline-size: 600px;
+  gap: 13px;
+  > div {
+    /* flex-grow: 1;
+    flex-basis: 0; */
+    inline-size: 200px;
+    /* flex로 줄여서 사용가능*/
+    /* flex-grow:1;*/
+    /* flex-shrink:1;*/
+    /* flex-basis:0;*/
+    flex: 1 1 0;
+  }
+  /* 
+  .school-item1 {
+    flex-grow: 1;
+  }
+  .school-item2 {
+    flex-grow: 2;
+  }
+  .school-item3 {
+    flex-grow: 3;
+  }
+  .school-item4 {
+    flex-grow: 4;
+  } */
 }
