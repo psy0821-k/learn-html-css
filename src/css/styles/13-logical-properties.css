@@ -1,3 +1,14 @@
+/*
+일반적인 요소 width , height에 적용할때는
+width->inline-size
+height->block-size
+논리속성으로 사용하는 이유는 다국어 및 다양하게 쓰기 모드를 지원하는 웹사이트에서 유연하게 사용하기 위함입니다.
+예를들어inline-size는 텍스트가 흐르는 방향의 크기를 정의하는 거라서 한글과 영어는 좌우로, 수직으로 작성하는 일본어나 아랍어는 수직으로 지원합니다.
+
+margin, padding에서는 block이나 inline을 사용하여 좌우값, 상하값을 합쳐서 같이 사용할수 있습니다.
+padding-block: 20px; /블록은 탑,바텁을 합친 값/
+margin-inline: 20px; /인라인은 좌우를 합친 값/ */
+
 /* 논리속성과 논리 값 */
 /* width, height */
 
@@ -46,4 +57,5 @@
   padding: 10px;
   background-color: salmon;
   border-block-end: 2px solid blue;
+  margin-inline: 20px;
 }

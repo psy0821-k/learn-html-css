@@ -5,14 +5,19 @@ body {
   font-family: 'SUIT Variable', sans-serif;
 }
 
-.css {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.spacing-20 {
   margin: 20px;
 
-  a {
+  /* a {
     text-decoration: none;
     color: inherit;
     display: block;
-  }
+  } */
 
   h1 {
     margin-block: 20px;
